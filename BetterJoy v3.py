@@ -10,7 +10,7 @@ pygame.init()
 pygame.joystick.init()
 
 if pygame.joystick.get_count() == 0:
-    raise Exception("No Joy-Con detected. Connect via Bluetooth.")
+    messagebox.showerror("No Joy-Con detected", "No Joy-Con connected. Connect via Bluetooth.")
 
 joycon = pygame.joystick.Joystick(0)
 joycon.init()
@@ -129,3 +129,4 @@ if __name__ == "__main__":
     root = tk.Tk()
     BetterJoy(root)
     root.mainloop()
+
