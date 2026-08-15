@@ -23,7 +23,7 @@ REFRESH_DELAY = 0.005
 class BetterJoy:
     def __init__(self, root):
         self.root = root
-        self.root.title("BetterJoy - Tykniter Edition")
+        self.root.title("BetterJoy - Tkniter Edition")
         self.root.geometry("400x420")
         self.root.configure(bg="#0a0a0a")
 
